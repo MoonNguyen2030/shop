@@ -45,8 +45,6 @@ $random = $db -> fetchsql($rand);
 							</div>
 						</div>
 					</div>
-
-
 				</div>
 				<!-- /Product Details -->
 			<?php endforeach?>

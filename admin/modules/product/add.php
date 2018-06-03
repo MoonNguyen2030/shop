@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $file_type = $_FILES['link']['type'];
             $file_erro = $_FILES['link']['error'];
             if ($file_erro == 0) {
-                $part = ROOT ."/như/shop/productpic/";
+                $part = ROOT ."/shop/productpic/";
                 $data['link'] = $file_name;
             }
         }       

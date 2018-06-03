@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
     if ($is_check != NULL) {
       $_SESSION['admin_name'] = $is_check['name'];
       $_SESSION['admin_id'] = $is_check['id'];
-      echo "<script>alert('Đăng nhập thành công'); location.href='/như/shop/'</script>";
+      echo "<script>alert('Đăng nhập thành công'); location.href='/shop/'</script>";
     }else{
       echo "<script>alert('Bạn đã nhập sai email hoặc mật khẩu !');</script>";
     }
