@@ -71,7 +71,7 @@ if ( ! function_exists('redirectAdmin'))
 {
     function redirectAdmin($url = "")
     {
-        echo "<script>location.href='/như/shop/admin/modules/{$url}';</script>";exit();
+        echo "<script>location.href='/shop/admin/modules/{$url}';</script>";exit();
     }
 }
 if ( ! function_exists('redirect'))
@@ -85,22 +85,7 @@ function cost($number){
     $number = intval($number);
     return $number = number_format($number,0,',','.') . " VND";
 }
-function costSale($number,$sale){
-    $number = intval($number);
-    $sale = intval($sale);
-    $price = $number * (100 - $sale)/100;
-    return cost($price);
-}
-function sale($number){
-    $number = intval($number);
-    if ($number < 2000000) {
-        return 0;
-    }else if ($number < 8000000){
-        return 2;
-    }else{
-        return 5;
-    }
-}
+
 ?>
 
 
